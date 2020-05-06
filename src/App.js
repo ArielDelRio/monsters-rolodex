@@ -1,24 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {SearchBox} from './components/search-box/search-box.component';
+
+const monsters = [
+  {
+    name: 'Ariel',
+    email: 'ariel@gmail.com'
+  },{
+    name: 'Tato',
+    email: 'tato@gmail.com'
+  },{
+    name: 'Yero',
+    email: 'yero@gmail.com'
+  },{
+    name: 'Arnold',
+    email: 'arnold@gmail.com'
+  },{
+    name: 'Marlon',
+    email: 'marlon@gmail.com'
+  },{
+    name: 'Gilberto',
+    email: 'gilberto@gmail.com'
+  },{
+    name: 'Osvaldo',
+    email: 'osvaldo@gmail.com'
+  },{
+    name: 'Yacel',
+    email: 'yacel@gmail.com'
+  },{
+    name: 'Raul',
+    email: 'raul@gmail.com'
+  }
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SearchBox placeholder='Search monster..'/>
     </div>
   );
 }
